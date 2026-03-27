@@ -85,7 +85,7 @@ const Index = () => {
             )}
           </div>
           <span className="group-hover:text-white transition-colors">
-            {isPlaying ? "PHASE_LIVE" : "SEQUENCE_PAUSED"}
+            {isPlaying ? "PAUSE_LIVE" : "SEQUENCE_PAUSED"}
           </span>
           <div className="absolute -top-1 -left-1 w-2 h-2 bg-neon-cyan"></div>
         </motion.button>

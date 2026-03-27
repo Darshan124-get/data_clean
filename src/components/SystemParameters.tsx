@@ -42,11 +42,11 @@ const EventDetails = () => {
         SYSTEM_PARAMETERS
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 max-w-5xl w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-5xl w-full">
         {cards.map((card, i) => (
           <motion.div
             key={i}
-            className={`cyber-panel ${borderClass[card.color]} p-3 md:p-6 flex flex-row md:flex-col items-center text-left md:text-center gap-3 md:gap-4 cursor-default transition-all duration-300 hover:-translate-y-2 hover:bg-black group relative`}
+            className={`cyber-panel ${borderClass[card.color]} p-5 md:p-6 flex flex-row md:flex-col items-center text-left md:text-center gap-3 md:gap-4 cursor-default transition-all duration-300 hover:-translate-y-2 hover:bg-black group relative`}
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
