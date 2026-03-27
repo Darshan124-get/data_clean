@@ -30,9 +30,9 @@ const TitleReveal = () => {
       ))}
 
       {/* Main title block */}
-      <motion.div className="relative bg-black/80 px-12 py-8 border-4 border-neon-yellow cyber-panel">
+      <motion.div className="relative bg-black/80 px-6 md:px-12 py-6 md:py-8 border-4 border-neon-yellow cyber-panel max-w-[90vw]">
         <motion.h1
-          className="font-display text-5xl md:text-7xl lg:text-9xl font-black tracking-[0.1em] text-center text-white"
+          className="font-display text-4xl md:text-7xl lg:text-9xl font-black tracking-[0.05em] md:tracking-[0.1em] text-center text-white"
           initial={{ scale: 3, opacity: 0, filter: "blur(20px)" }}
           animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 0.6, delay: 0.2, type: "spring", stiffness: 150 }}
@@ -57,7 +57,7 @@ const TitleReveal = () => {
         animate={{ opacity: 1, y: 0, scaleY: 1 }}
         transition={{ duration: 0.4, delay: 1 }}
       >
-        <p className="font-mono text-xl md:text-2xl font-bold tracking-[0.5em] text-white">
+        <p className="font-mono text-lg md:text-2xl font-bold tracking-[0.2em] md:tracking-[0.5em] text-white">
           SCRUB THE NOISE
         </p>
       </motion.div>

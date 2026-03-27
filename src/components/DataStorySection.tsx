@@ -14,7 +14,7 @@ const DataStorySection = () => {
       transition={{ duration: 0.5 }}
     >
       <motion.p
-        className="font-display text-2xl md:text-3xl tracking-[0.5em] text-neon-magenta mb-12 font-bold uppercase glitch-text"
+        className="font-display text-xl md:text-3xl tracking-[0.2em] md:tracking-[0.5em] text-neon-magenta mb-8 md:mb-12 font-bold uppercase glitch-text"
         data-text="THE_TRANSFORMATION"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -26,7 +26,7 @@ const DataStorySection = () => {
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
         {/* Messy data */}
         <motion.div
-          className="cyber-panel neon-border-magenta p-6 md:p-8 flex flex-col items-center gap-4 min-w-[200px]"
+          className="cyber-panel neon-border-magenta p-4 md:p-8 flex flex-col items-center gap-4 min-w-[180px] md:min-w-[200px]"
           initial={{ x: -100, opacity: 0, rotate: -3 }}
           animate={{ x: 0, opacity: 1, rotate: 0 }}
           transition={{ delay: 0.5, type: "spring", stiffness: 100 }}
@@ -79,7 +79,7 @@ const DataStorySection = () => {
 
         {/* Clean data */}
         <motion.div
-          className="cyber-panel neon-border-cyan p-6 md:p-8 flex flex-col items-center gap-4 min-w-[200px]"
+          className="cyber-panel neon-border-cyan p-4 md:p-8 flex flex-col items-center gap-4 min-w-[180px] md:min-w-[200px]"
           initial={{ x: 100, opacity: 0, rotate: 3 }}
           animate={{ x: 0, opacity: 1, rotate: 0 }}
           transition={{ delay: 2.2, type: "spring", stiffness: 100 }}

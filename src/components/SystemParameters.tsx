@@ -33,7 +33,7 @@ const EventDetails = () => {
       <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-neon-cyan to-transparent opacity-50"></div>
       
       <motion.h2
-        className="font-display text-3xl md:text-5xl tracking-[0.3em] text-white mb-8 md:mb-12 font-bold uppercase glitch-text"
+        className="font-display text-2xl md:text-5xl tracking-[0.15em] md:tracking-[0.3em] text-white mb-6 md:mb-12 font-bold uppercase glitch-text"
         data-text="SYSTEM_PARAMETERS"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}

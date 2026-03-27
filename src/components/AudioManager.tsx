@@ -13,6 +13,8 @@ const AudioManager = ({ play }: AudioManagerProps) => {
   useEffect(() => {
     if (audioRef.current) {
       if (play && !isMuted) {
+        // Reset to start when transitioning from stopped to playing
+        audioRef.current.currentTime = 0;
         audioRef.current.play().catch((err) => {
           console.warn("Autoplay blocked or audio failed to load:", err);
         });
@@ -32,7 +34,7 @@ const AudioManager = ({ play }: AudioManagerProps) => {
     <>
       <audio
         ref={audioRef}
-        src="public/as.mp3"
+        src="/as.mp3"
         loop
       />
       

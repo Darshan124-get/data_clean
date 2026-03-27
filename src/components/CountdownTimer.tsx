@@ -38,7 +38,7 @@ const CountdownTimer = () => {
       transition={{ duration: 0.5 }}
     >
       <motion.h2
-        className="font-display text-2xl md:text-4xl tracking-[0.5em] text-neon-magenta mb-12 font-bold uppercase"
+        className="font-display text-xl md:text-4xl tracking-[0.2em] md:tracking-[0.5em] text-neon-magenta mb-8 md:mb-12 font-bold uppercase"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2 }}
@@ -46,11 +46,11 @@ const CountdownTimer = () => {
         T-MINUS
       </motion.h2>
 
-      <div className="flex gap-2 md:gap-6">
+      <div className="flex gap-1 md:gap-6">
         {units.map((u, i) => (
           <motion.div
             key={u.label}
-            className="relative bg-black border-2 border-neon-cyan flex flex-col items-center p-4 md:p-8 min-w-[75px] md:min-w-[120px] overflow-hidden"
+            className="relative bg-black border-2 border-neon-cyan flex flex-col items-center p-2 md:p-8 min-w-[70px] md:min-w-[120px] overflow-hidden"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4 + i * 0.1, type: "spring" }}
@@ -60,7 +60,7 @@ const CountdownTimer = () => {
             
             <motion.span
               key={u.value}
-              className="font-display text-4xl md:text-7xl font-black text-neon-cyan neon-glow-cyan mt-2"
+              className="font-display text-3xl md:text-7xl font-black text-neon-cyan neon-glow-cyan mt-2"
               initial={{ opacity: 0.5, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.2 }}
