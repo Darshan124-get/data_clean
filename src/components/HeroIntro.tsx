@@ -20,7 +20,7 @@ const HeroIntro = ({ onComplete }: HeroIntroProps) => {
 
         {/* Line 1 */}
         <motion.h2
-          className="font-display text-2xl md:text-4xl lg:text-5xl tracking-widest text-white uppercase bg-black px-4 py-2 border-l-4 border-neon-yellow inline-block"
+          className="font-display text-xl md:text-4xl lg:text-5xl tracking-wider md:tracking-widest text-white uppercase bg-black px-4 py-2 border-l-4 border-neon-yellow inline-block"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3, type: "spring" }}
@@ -39,7 +39,7 @@ const HeroIntro = ({ onComplete }: HeroIntroProps) => {
 
         {/* Line 2 */}
         <motion.h2
-          className="font-display text-xl md:text-3xl lg:text-4xl tracking-widest text-neon-cyan neon-glow-cyan uppercase bg-black/60 px-6 py-2 inline-block border border-neon-cyan"
+          className="font-display text-lg md:text-3xl lg:text-4xl tracking-wider md:tracking-widest text-neon-cyan neon-glow-cyan uppercase bg-black/60 px-4 md:px-6 py-2 inline-block border border-neon-cyan px-4"
           initial={{ opacity: 0, scaleY: 0 }}
           animate={{ opacity: 1, scaleY: 1 }}
           transition={{ duration: 0.3, delay: 2 }}
@@ -52,7 +52,7 @@ const HeroIntro = ({ onComplete }: HeroIntroProps) => {
 
         {/* Line 3 */}
         <motion.h1
-          className="font-display text-4xl md:text-6xl lg:text-8xl tracking-widest font-black text-neon-magenta neon-glow-magenta uppercase mt-4"
+          className="font-display text-3xl md:text-6xl lg:text-8xl tracking-wider md:tracking-widest font-black text-neon-magenta neon-glow-magenta uppercase mt-4"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ 
             opacity: 1, 

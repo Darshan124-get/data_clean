@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 const FinalHype = () => {
   const lines = [
-    { text: "GET READY...", delay: 0.3, className: "text-white text-3xl md:text-5xl lg:text-6xl" },
-    { text: "TO CLEAN THE DATA", delay: 1.5, className: "text-neon-cyan neon-glow-cyan text-2xl md:text-4xl lg:text-5xl" },
-    { text: "SYSTEM_ONLINE", delay: 3, className: "text-neon-magenta neon-glow-magenta text-4xl md:text-6xl lg:text-8xl font-black glitch-text" },
+    { text: "GET READY...", delay: 0.3, className: "text-xl md:text-5xl lg:text-6xl" },
+    { text: "TO CLEAN THE DATA", delay: 1.5, className: "text-lg md:text-4xl lg:text-5xl" },
+    { text: "SYSTEM_ONLINE", delay: 3, className: "text-2xl md:text-6xl lg:text-8xl font-black glitch-text tracking-normal md:tracking-[0.15em]" },
   ];
 
   return (

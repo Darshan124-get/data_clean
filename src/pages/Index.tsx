@@ -106,7 +106,7 @@ const Index = () => {
               animate={{ opacity: 1, y: 0 }}
               className="text-center z-10"
             >
-              <h2 className="font-display text-xs tracking-[0.5em] text-neon-cyan mb-8 uppercase animate-pulse">
+              <h2 className="font-display text-[10px] md:text-xs tracking-[0.2em] md:tracking-[0.5em] text-neon-cyan mb-8 uppercase animate-pulse">
                 // AUTHENTICATION_REQUIRED
               </h2>
               <button 
