@@ -24,7 +24,7 @@ const textClass = {
 const EventDetails = () => {
   return (
     <motion.section
-      className="fixed inset-0 z-30 flex flex-col items-center justify-center px-4 overflow-y-auto py-12 bg-black/60 backdrop-blur-sm"
+      className="fixed inset-0 z-30 flex flex-col items-center sm:justify-center px-4 overflow-y-auto py-20 bg-black/60 backdrop-blur-sm"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -33,7 +33,7 @@ const EventDetails = () => {
       <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-neon-cyan to-transparent opacity-50"></div>
       
       <motion.h2
-        className="font-display text-2xl md:text-5xl tracking-[0.15em] md:tracking-[0.3em] text-white mb-6 md:mb-12 font-bold uppercase glitch-text"
+        className="font-display text-2xl md:text-5xl tracking-[0.15em] md:tracking-[0.3em] text-white mb-8 md:mb-12 font-bold uppercase glitch-text shrink-0"
         data-text="SYSTEM_PARAMETERS"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -42,11 +42,11 @@ const EventDetails = () => {
         SYSTEM_PARAMETERS
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-5xl w-full pb-12">
         {cards.map((card, i) => (
           <motion.div
             key={i}
-            className={`cyber-panel ${borderClass[card.color]} p-6 flex flex-col items-center text-center gap-4 cursor-default transition-all duration-300 hover:-translate-y-2 hover:bg-black group relative`}
+            className={`cyber-panel ${borderClass[card.color]} p-4 md:p-6 flex flex-col items-center text-center gap-3 md:gap-4 cursor-default transition-all duration-300 hover:-translate-y-2 hover:bg-black group relative`}
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
@@ -56,10 +56,10 @@ const EventDetails = () => {
               <div className="w-full h-1 bg-white/20 scanline"></div>
             </div>
 
-            <card.icon className={`w-10 h-10 ${textClass[card.color]} group-hover:scale-110 transition-transform`} />
+            <card.icon className={`w-8 h-8 md:w-10 md:h-10 ${textClass[card.color]} group-hover:scale-110 transition-transform`} />
             
             <div>
-              <p className="font-mono text-[10px] md:text-xs tracking-[0.3em] text-gray-400 mb-1">{card.label}</p>
+              <p className="font-mono text-[9px] md:text-xs tracking-[0.3em] text-gray-400 mb-1">{card.label}</p>
               <p className={`font-display text-sm md:text-base tracking-widest font-bold uppercase ${textClass[card.color]}`}>
                 {card.value}
               </p>

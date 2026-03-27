@@ -92,7 +92,13 @@
   /* Aggressive corner cut style */
   .cyber-panel {
     @apply relative bg-black/80 border border-neon-yellow/50;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%);
+  }
+
+  @screen md {
+    .cyber-panel {
+      clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+    }
   }
   
   .cyber-panel::before {
@@ -100,10 +106,17 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 20px;
-    height: 20px;
+    width: 12px;
+    height: 12px;
     background-color: hsl(var(--neon-yellow));
     clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  }
+
+  @screen md {
+    .cyber-panel::before {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   .neon-glow-yellow {
