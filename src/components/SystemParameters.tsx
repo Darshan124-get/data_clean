@@ -4,7 +4,7 @@ import { Building2, Users, Calendar, MapPin, GraduationCap } from "lucide-react"
 const cards = [
   { icon: Building2, label: "ORGANIZED BY", value: "Department of Computer Applications", color: "cyan" as const },
   { icon: Users, label: "CLUB", value: "V-Avishkar Club", color: "magenta" as const },
-  { icon: Calendar, label: "DATE", value: "31 March 2026", color: "yellow" as const },
+  { icon: Calendar, label: "DATE", value: "30 March 2026", color: "yellow" as const },
   { icon: MapPin, label: "LOCATION", value: "Computer Lab, VVFGC", color: "cyan" as const },
   { icon: GraduationCap, label: "Participants", value: "BCA II Semester Students", color: "magenta" as const },
 ];
