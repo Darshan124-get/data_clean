@@ -6,7 +6,7 @@ const cards = [
   { icon: Users, label: "CLUB", value: "V-Avishkar Club", color: "magenta" as const },
   { icon: Calendar, label: "DATE", value: "31 March 2026", color: "yellow" as const },
   { icon: MapPin, label: "LOCATION", value: "Computer Lab, VVFGC", color: "cyan" as const },
-  { icon: GraduationCap, label: "AUDIENCE", value: "BCA II Semester Students", color: "magenta" as const },
+  { icon: GraduationCap, label: "Participants", value: "BCA II Semester Students", color: "magenta" as const },
 ];
 
 const borderClass = {
