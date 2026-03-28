@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const TARGET = new Date("2026-03-31T00:00:00").getTime();
+const TARGET = new Date("2026-03-30T00:00:00").getTime();
 
 const CountdownTimer = () => {
   const [time, setTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -82,7 +82,7 @@ const CountdownTimer = () => {
         transition={{ delay: 1.2, duration: 0.5 }}
       >
         <p className="font-mono text-sm md:text-lg tracking-widest text-neon-yellow uppercase">
-          TARGET_DATE: 31_MAR_2026
+          TARGET_DATE: 30_MAR_2026
         </p>
         <p className="font-mono text-xs text-gray-500 mt-1 uppercase">
           // SYSTEM INITIALIZATION SCHEDULED

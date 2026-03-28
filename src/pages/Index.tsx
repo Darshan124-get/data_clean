@@ -113,7 +113,7 @@ const Index = () => {
                 onClick={() => setPhase("loader")}
                 className="group relative px-12 py-5 font-display text-lg tracking-[0.3em] text-black bg-neon-yellow hover:bg-white transition-all duration-300 cyber-panel uppercase font-bold"
               >
-                <span className="relative z-10 glitch-text" data-text="ENTER_EXPERIENCE">ENTER_EXPERIENCE</span>
+                <span className="relative z-10 glitch-text" data-text="CLICK TO PLAY">CLICK TO PLAY</span>
                 {/* Decorative bits on button */}
                 <div className="absolute -top-1 -right-1 w-4 h-4 border-t-2 border-r-2 border-neon-cyan group-hover:scale-150 transition-transform"></div>
                 <div className="absolute -bottom-1 -left-1 w-4 h-4 border-b-2 border-l-2 border-neon-magenta group-hover:scale-150 transition-transform"></div>
